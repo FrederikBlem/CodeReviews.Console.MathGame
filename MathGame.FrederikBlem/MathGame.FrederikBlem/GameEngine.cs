@@ -6,12 +6,12 @@ internal class GameEngine
     #region Fields
     // Fields to hold operator string and number ranges
     string operatorString = "";
-    int easyMin = 0;
-    int easyMax = 0;
-    int mediumMin = 0;
-    int mediumMax = 0;
-    int hardMin = 0;
-    int hardMax = 0;
+    int easyMin;
+    int easyMax;
+    int mediumMin;
+    int mediumMax;
+    int hardMin;
+    int hardMax;
     #endregion // Fields
 
     #region Main Game Loop
@@ -19,7 +19,6 @@ internal class GameEngine
     {
         Console.WriteLine(message);
 
-        Random random = new Random(); // For generating random numbers
         int score = 0;
         int firstNumber;
         int secondNumber;

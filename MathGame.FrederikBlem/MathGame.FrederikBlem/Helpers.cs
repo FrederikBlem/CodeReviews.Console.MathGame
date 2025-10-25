@@ -287,7 +287,6 @@ Q - Quit Viewing High Scores");
         {
             string paddedName = gameRecord.NamePlayer.PadRight(15);
             string paddedType = gameRecord.Type.ToString().PadRight(14);
-            string paddedScore = gameRecord.Score.ToString().PadLeft(2);
             string paddedDifficulty = gameRecord.Difficulty.ToString().PadRight(6);
             string timeTaken = String.Format("{0:00}:{1:00}:{2:00}", gameRecord.TimeTaken.Hours, gameRecord.TimeTaken.Minutes, gameRecord.TimeTaken.Seconds);
             Console.WriteLine($"{paddedName} | {gameRecord.Date} - {paddedType}: {gameRecord.Score} points on {paddedDifficulty} | {timeTaken}");

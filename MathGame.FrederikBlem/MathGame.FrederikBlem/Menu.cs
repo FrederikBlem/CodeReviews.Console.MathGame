@@ -58,7 +58,6 @@ Q - Quit the program");
                     break;
                 default:
                     Console.WriteLine("Invalid Input. Please choose a valid option.");
-                    //keepGoing = false;
                     break;
             }
 
